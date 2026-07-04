@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html.dark body {
+  background-color: #14131c;
+}
+
+@layer components {
+  .index-card {
+    @apply relative bg-white border border-ink/15 rounded-card shadow-sm;
+    clip-path: polygon(
+      0 0,
+      calc(100% - 22px) 0,
+      100% 22px,
+      100% 100%,
+      0 100%
+    );
+  }
+
+  .index-card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 22px;
+    height: 22px;
+    background: theme("colors.paper");
+    clip-path: polygon(0 0, 100% 0, 100% 100%);
+    border-bottom: 1px solid theme("colors.ink.DEFAULT" / 15%);
+    border-left: 1px solid theme("colors.ink.DEFAULT" / 15%);
+  }
+
+  .btn-primary {
+    @apply bg-ink text-paper font-medium px-5 py-2.5 rounded-card
+      hover:bg-ink-dark transition-colors duration-150
+      focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ink;
+  }
+
+  .btn-secondary {
+    @apply bg-transparent text-ink font-medium px-5 py-2.5 rounded-card border border-ink/30
+      hover:bg-ink/5 transition-colors duration-150
+      focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ink;
+  }
+
+  .input-field {
+    @apply w-full bg-white border border-ink/20 rounded-card px-4 py-2.5 text-charcoal
+      placeholder:text-charcoal/40 focus:outline-none focus:border-ink transition-colors duration-150;
+  }
+}
