@@ -19,12 +19,11 @@ const Register = () => {
     const email = form.email.value.trim();
     const password = form.password.value;
     const confirmPassword = form.confirmPassword.value;
-
-    // Simple password strength check — at minimum: 6+ chars, one upper, one lower.
+    
     const strongEnough = /^(?=.*[a-z])(?=.*[A-Z]).{6,}$/.test(password);
     if (!strongEnough) {
       return setError(
-        "Password needs at least 6 characters, with one uppercase and one lowercase letter."
+        "Password needs at least 6 characters, with one uppercase"
       );
     }
 
@@ -34,8 +33,7 @@ const Register = () => {
 
     try {
       setSubmitting(true);
-      await registerUser(name, email, password, photoURL);
-      toast.success("Account created — welcome to PawHome!");
+      toast.success("Account created — welcome to PetHome!");
       navigate("/");
     } catch (err) {
       setError(err.message || "Something went wrong creating your account. Please try again.");
@@ -57,7 +55,7 @@ const Register = () => {
   return (
     <div className="min-h-screen flex items-center justify-center bg-paper px-4 py-12">
       <div className="index-card w-full max-w-md p-8">
-        <h1 className="font-display text-3xl text-ink mb-1">Join PatHome</h1>
+        <h1 className="font-display text-3xl text-ink mb-1">Join PetHome</h1>
         <p className="text-charcoal/60 text-sm mb-6">
           Create an account to adopt pets and list pets for adoption.
         </p>

@@ -54,7 +54,7 @@ const Navbar = () => {
           <span className="grid place-items-center w-9 h-9 rounded-card bg-ink text-paper">
             <FaPaw size={16} />
           </span>
-          <span className="font-display text-xl text-ink dark:text-paper">PawHome</span>
+          <span className="font-display text-xl text-ink dark:text-paper">PetHome</span>
         </Link>
 
         <div className="hidden md:flex items-center gap-7">{links}</div>
