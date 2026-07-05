@@ -17,7 +17,6 @@ const Register = () => {
     const form = e.target;
     const name = form.name.value.trim();
     const email = form.email.value.trim();
-    const photoURL = form.photoURL.value.trim();
     const password = form.password.value;
     const confirmPassword = form.confirmPassword.value;
 
@@ -58,7 +57,7 @@ const Register = () => {
   return (
     <div className="min-h-screen flex items-center justify-center bg-paper px-4 py-12">
       <div className="index-card w-full max-w-md p-8">
-        <h1 className="font-display text-3xl text-ink mb-1">Join PawHome</h1>
+        <h1 className="font-display text-3xl text-ink mb-1">Join PatHome</h1>
         <p className="text-charcoal/60 text-sm mb-6">
           Create an account to adopt pets and list pets for adoption.
         </p>
@@ -71,10 +70,6 @@ const Register = () => {
           <div>
             <label className="text-sm font-medium text-charcoal/80">Email</label>
             <input name="email" type="email" required className="input-field mt-1" placeholder="you@example.com" />
-          </div>
-          <div>
-            <label className="text-sm font-medium text-charcoal/80">Photo URL</label>
-            <input name="photoURL" type="text" className="input-field mt-1" placeholder="https://..." />
           </div>
           <div>
             <label className="text-sm font-medium text-charcoal/80">Password</label>

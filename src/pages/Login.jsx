@@ -46,7 +46,7 @@ const Login = () => {
     <div className="min-h-screen flex items-center justify-center bg-paper px-4 py-12">
       <div className="index-card w-full max-w-md p-8">
         <h1 className="font-display text-3xl text-ink mb-1">Welcome back</h1>
-        <p className="text-charcoal/60 text-sm mb-6">Log in to your PawHome account.</p>
+        <p className="text-charcoal/60 text-sm mb-6">Log in to your PatHome account.</p>
 
         <form onSubmit={handleLogin} className="space-y-4">
           <div>
