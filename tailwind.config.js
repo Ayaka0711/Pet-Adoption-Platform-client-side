@@ -22,7 +22,7 @@ export default {
         mono: ["JetBrains Mono", "monospace"],
       },
       borderRadius: {
-        card: "6px", // index-card corners, not the generic rounded-2xl look
+        card: "6px",
       },
     },
   },
