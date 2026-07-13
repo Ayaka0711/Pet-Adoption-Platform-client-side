@@ -1,4 +1,3 @@
-// components/PetCard.jsx
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { FaMapMarkerAlt, FaSyringe } from "react-icons/fa";
