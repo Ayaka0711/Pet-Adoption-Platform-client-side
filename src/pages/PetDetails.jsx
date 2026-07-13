@@ -46,7 +46,6 @@ const PetDetails = () => {
     const form = e.target;
     const pickupDate = form.pickupDate.value;
     const message = form.message.value;
-
     try {
       setSubmitting(true);
       await axiosSecure.post("/api/requests", { petId: pet._id, pickupDate, message });
