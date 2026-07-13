@@ -1,8 +1,8 @@
-# PawHome — Pet Adoption Platform (Client)
+# PetHome — Pet Adoption Platform (Client)
 
 ## Purpose
 
-PawHome is a full-stack MERN pet adoption platform. This is the **client-side** (React + Vite)
+PetHome is a full-stack MERN pet adoption platform. This is the **client-side** (React + Vite)
 repository. It lets people browse pets available for adoption (dogs, cats, birds, rabbits, and
 more), view detailed profiles, and submit adoption requests — while pet owners/shelters can list
 pets, manage their own listings, and approve or reject the requests they receive.
