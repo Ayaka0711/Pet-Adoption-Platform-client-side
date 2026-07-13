@@ -1,4 +1,3 @@
-// components/Navbar.jsx
 import { useState } from "react";
 import { Link, NavLink, useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
