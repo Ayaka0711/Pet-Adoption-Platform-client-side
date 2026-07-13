@@ -1,6 +1,3 @@
-// components/PetForm.jsx
-// Shared form for Add Pet and Update Pet — same fields per the assignment spec.
-
 import { useAuth } from "../context/AuthContext";
 
 const SPECIES_OPTIONS = ["Dog", "Cat", "Bird", "Rabbit", "Fish", "Other"];
