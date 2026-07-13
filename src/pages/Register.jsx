@@ -57,7 +57,7 @@ const Register = () => {
   return (
     <div className="min-h-screen flex items-center justify-center bg-paper px-4 py-12">
       <div className="index-card w-full max-w-md p-8">
-        <h1 className="font-display text-3xl text-ink mb-1">Join PawHome</h1>
+        <h1 className="font-display text-3xl text-ink mb-1">Join PetHome</h1>
         <p className="text-charcoal/60 text-sm mb-6">
           Create an account to adopt pets and list pets for adoption.
         </p>
@@ -83,7 +83,6 @@ const Register = () => {
             <label className="text-sm font-medium text-charcoal/80">Confirm Password</label>
             <input name="confirmPassword" type="password" required className="input-field mt-1" placeholder="••••••••" />
           </div>
-
           {error && <p className="text-sm text-red-600">{error}</p>}
 
           <button type="submit" disabled={submitting} className="btn-primary w-full disabled:opacity-60">
