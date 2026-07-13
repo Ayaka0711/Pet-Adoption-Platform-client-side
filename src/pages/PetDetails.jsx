@@ -1,4 +1,3 @@
-// pages/PetDetails.jsx
 import { useEffect, useState } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
@@ -29,7 +28,6 @@ const PetDetails = () => {
 
   useEffect(() => {
     fetchPet();
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [id]);
 
   if (loading) return <Spinner fullScreen label="Fetching pet details..." />;

@@ -53,7 +53,6 @@ const Register = () => {
       toast.error("Google sign-in failed. Please try again.");
     }
   };
-
   return (
     <div className="min-h-screen flex items-center justify-center bg-paper px-4 py-12">
       <div className="index-card w-full max-w-md p-8">
