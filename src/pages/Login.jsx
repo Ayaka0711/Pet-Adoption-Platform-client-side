@@ -4,7 +4,6 @@ import { toast } from "react-toastify";
 import { FcGoogle } from "react-icons/fc";
 import { useAuth } from "../context/AuthContext";
 
-
 const Login = () => {
   const { loginUser, loginWithGoogle } = useAuth();
   const navigate = useNavigate();
